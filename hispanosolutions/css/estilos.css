@@ -1,0 +1,237 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+  }
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+ */ 
+/*Da formato al encabezado*/
+.enc-clientes-satisfechos{   
+    color:rgb(63, 165, 42);
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1pt;
+    background-color:  white;
+}
+/*INICIA SECCION SERVICIOS*/
+.seccion2{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(63, 165, 42);
+    color: white;
+    /*FLEX*/
+}
+.enc-servicios{   
+    padding-top: 2%;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 8pt;
+}/* Da formato a tipos de letra de la tabla */
+.servicios {
+    padding: 5%;
+    /*FLEX*/
+    display: flex;
+    justify-content:space-around;
+}
+/*Da formato a la lista de servicios*/
+.lista-servicios{    
+    padding: 5%;
+    line-height: 20pt;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(231, 194, 172, 0.247);
+    justify-content: flex-end;
+    /*FLEX*/
+    justify-content:space-around;
+}
+section3{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color:rgb(63, 165, 42);
+}
+.quienesomos-texto {
+    padding: 2%;
+    text-align: center;
+}
+/*Da formato al encabezado*/
+.enc-quienesomos{   
+   text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 8pt;
+    padding-top: 2%;
+}
+/*Para centrar la imagen*/
+.fotox{
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 2%;
+    /*FLEX*/
+    display: flex;  
+}
+.contacto {
+    display:inline-flex;
+    padding: 2%;
+    background-color: rgb(61, 57, 57);
+    color: rgb(63, 165, 42);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+/*Da formato al encabezado*/
+/*INICIA FOOTER*/
+.enc-contacto{   
+    color: rgb(194, 40, 40);
+    text-align: center;
+    font-size: 2.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(63, 165, 42);
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;   
+    width: 100%;
+    color: rgb(63, 165, 42);
+    background-color: rgba(236, 231, 231, 0.356);
+    text-align: left;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    /*FLEX*/
+    display: flex;
+    flex-direction: row;
+    /*Distribuye las 3 secciones*/
+    justify-content: space-around;    
+}
+.links{
+    /*FLEX*/
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    color: rgb(63, 165, 42);
+    text-decoration: none;
+}
+.links :hover{
+    background-color:rgb(130, 165, 98);
+    color: black
+  }
+/*CONTACTO DEL FOOTER*/
+.contacto{
+    font-weight: bold;
+    font-size:x-large;
+    background-color: rgba(236, 231, 233, 0.356);
+} 
+/*TERMINA FOOTER*/
+
+/*INICIA FORMULARIO DE CONTACTO*/ 
+/*INICIA FORMULARIO DE CONTACTO*/
+.section4 {
+    width: 100%;
+    background-color:rgb(63, 165, 42);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+/*Formato al titulo*/
+.form-title{
+    color:#ff851b;
+    padding-bottom: ;
+}
+.form-title span{
+    color: #fff;
+}
+/*Termina formato al titulo*/
+.formulario{
+    width: auto%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding: 2%;
+    background-color: rgb(93, 167, 79);
+    /*FLEX*/
+    display: block;
+    /*CENTRAEL FORMULARIO*/
+    align-self: center;
+}
+.formContacto{
+    display:inline-block;    
+    /*FLEX*/
+    flex-direction: row;
+  /*  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3); */
+    position: relative;
+}
+/*Formatea las cajas de texto y etiquetas*/
+.formulario__label{
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #864206;
+    font-family: Roboto;
+}
+.formulario__input{
+    display: block;
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+}
+/*Formato Boton*/
+.btn-submit{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #ff851b;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    /*En el hover no se notaba el cambio por eso la transicion*/
+    transition: all .5s ease;
+}
+.btn-submit:hover {
+    color: rgb(63, 165, 42);
+    background: rgba(214, 183, 124, 0.705);
+
+}
+/*Se utiliza en el java*/
+.fijar {
+    margin-top: -135px;
+}
+/*TERMINA FORMULARO DE CONTACTO*/
+.section5 {
+    width: 100%;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 165, 42);
+
+}
+/*Da formato al encabezado*/
+.enc-cargararchivo{   
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+}
+.cargar-archivo{
+    width: 80%;
+    color: rgb(63, 165, 42);
+    background-color: white;
+    height: 500px;
+
+    display: flex;    
+    justify-content: center;    
+
+}

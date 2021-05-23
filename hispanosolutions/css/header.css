@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Color asignado a todo el cuerpo del HTML*/
+body {
+  margin: 0;
+  background-color: white;
+}
+.contenedor {
+  width: 100%;
+  background: #ccc;
+  /*max-width: 1000px;*/
+  /* flex*/
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+}
+.section{
+  width: 100%;
+}
+.header1{
+/*El header, es un elemento hijo del contenedor*/
+  width: 100%;
+  background-color: white;
+  padding: 0px;
+  /* FLEX */
+  display: flex; /*Porque sera un elemento padre.*/
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Pone los elementos en linea*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-items: center;
+ /* tiene el wrap, para que al hacerse mas pequeno, se vaya bajando el menu*/ 
+}
+.header-logo{
+  display: flex;
+  background-color: white;
+  width: 15%; 
+  /*Este box-sizing sirve para el menu, no para el pequeon*/
+/*   box-sizing: border-box;
+ obcaject-fit: contain;*/
+}
+.header-logo-img {
+  width: 100%;  
+}
+/*.logochico {
+  display: none;
+}*/
+
+/*Desaparezco el checkbox del menu,para que no se vea.*/
+#btn-menu {
+  display: none;  
+}
+.header-nav {
+  width: 70%;  
+  /*FLEX sera un elemento padre de sus hijos*/
+  display: flex;
+  list-style: none;  /*Quita los bullets*/
+  /*flex-wrap:nowrap;
+  align-items:flex-end; */
+}
+.header-nav-a{
+  
+    color:  rgb(44, 192, 14);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    /*Como son elementos hijo de un padre FLEX, se pueden
+    aplicar propiedades de flex*/
+    flex-grow: 1; 
+  /*Todos creceran el tamano necesario para que abarque el % asignado */
+
+}
+header nav a:hover{
+  background-color:rgb(130, 165, 98);
+  color: black
+}
+/*El label que tiene la imagen del menu chico*/
+header label {
+  display: none;
+  width: 30px;
+  height: 80px;
+/*Este padding es para que el menu chico*/
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+/*Se agrega el .menu para que sea el 70% restante del 100 y ahi se alinea a la derecha el menu*/
+.pequeno-menu-nav {
+  width: 70%;
+  float: right;
+}
+  /* Color Borde entre las opciones del menu grande*/
+.pequeno-menu-li{
+    border-right: 1px solid rgb(176, 212, 139);
+}
+  
+/*Asigna el color para las cajasd el menu.*/
+.pequeno-menu-li-a{    
+  display: flex;
+  /*display: block;*/
+  padding: 15px 20px;
+  color: rgb(176, 212, 139);
+  /* background-color: rgb(12, 12, 12);*/ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  width:auto;
+  text-transform: uppercase;
+}
+/*Medida de una tablet para abajo, podemos cambiar el ancho,  es para cuando es pantalla pequena celular, ipad, etc*/
+@media (max-width:768px){
+header label  {
+  display: flex;
+ /*   display: block; */
+}
+.header-logo-img {
+  /*display: none;*/
+}
+/*.logochico {
+  display: flex;
+}*/
+
+/*.header1 {
+    height: auto;
+}*/
+.header-logo{
+    /*width: 25%;*/
+    float: right;
+}
+.header-nav-a{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 20px;
+    text-transform: uppercase;
+    /*Como son elementos hijo de un padre FLEX, se pueden
+    aplicar propiedades de flex*/
+}
+.pequeno-menu-nav{
+    position:fixed;
+    /*z-index: 1;*/
+    width: 50%;
+    display: flex;
+    display: block;
+    margin-left: -70%;
+    transition: all 0.55s
+  }
+  .pequeno-menu-ul{
+    flex-direction: column;
+    padding: 150px; /*Use este para bajar el menu*/
+    display: block;
+  }
+  .pequeno-menu-li{
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .pequeno-menu-nav {
+    margin: 0;
+  
+  }
+   
+}

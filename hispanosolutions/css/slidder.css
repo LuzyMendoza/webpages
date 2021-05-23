@@ -1,0 +1,56 @@
+/*Se usa el overflow hidden 
+para que esconda las imagenes que no se 
+ven en pantalla*/
+/*div ul {
+    width: 40%;
+    border: 2em;
+}*/
+.section1{
+    background-color: white;
+}
+.slider{
+    background-color: white;
+    padding: 5px;
+    width:46%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+}
+.slider-ul {
+    display: flex;
+    padding: 0;
+    width: 550%;
+    height: auto;
+    
+    object-fit:scale-down;
+
+    animation: cambio 20s infinite alternate linear;
+        
+}
+.slider-ul-li {
+    width: 100%;
+    list-style: none;
+
+}
+.slider-img {
+    width:100%  ;
+    border: 5px; 
+   
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -120%;}
+    45% { margin-left: -120%;}
+
+    50% { margin-left: -225%;}
+    70% { margin-left: -225%;}
+
+    75% { margin-left: -335%;}
+    100% { margin-left: -335%;}
+
+}
